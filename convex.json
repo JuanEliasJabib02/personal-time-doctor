@@ -1,4 +1,4 @@
 {
-  "functions": "src/convex",
-  "schema": "src/convex/schema.ts"
+  "functions": "src/backend/convex",
+  "schema": "src/backend/convex/schema.ts"
 }
