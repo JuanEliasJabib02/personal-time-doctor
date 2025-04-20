@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@better-auth-kit/convex':
+        specifier: ^1.2.2
+        version: 1.2.2(better-auth@1.2.7)(convex@1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       '@radix-ui/react-slot':
         specifier: ^1.2.0
         version: 1.2.0(@types/react@19.1.2)(react@19.1.0)
@@ -84,6 +87,13 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@better-auth-kit/convex@1.2.2':
+    resolution: {integrity: sha512-ZXTOsHrzNTgvAScTzJLQpTO+q5lncixFhNJiRORWi0CgQJ4RlJ2vto45xPdVgP5liYAOyP9x25k+S+sToqyxsA==}
+    peerDependencies:
+      better-auth: ^1.2.3
+      convex: ^1.17.4
+      typescript: ^5.7.2
 
   '@better-auth/utils@0.2.4':
     resolution: {integrity: sha512-ayiX87Xd5sCHEplAdeMgwkA0FgnXsEZBgDn890XHHwSWNqqRZDYOq3uj2Ei2leTv1I2KbG5HHn60Ah1i2JWZjQ==}
@@ -2077,6 +2087,13 @@ packages:
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@better-auth-kit/convex@1.2.2(better-auth@1.2.7)(convex@1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)':
+    dependencies:
+      better-auth: 1.2.7
+      convex: 1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      prettier: 3.5.2
+      typescript: 5.8.3
 
   '@better-auth/utils@0.2.4':
     dependencies:
