@@ -1,0 +1,1 @@
+//global hooks, that will be used in all the app.
