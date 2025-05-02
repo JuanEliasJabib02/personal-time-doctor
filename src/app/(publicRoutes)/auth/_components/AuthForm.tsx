@@ -12,7 +12,6 @@ export function AuthForm() {
 		emailSent,
 		resetEmailSent,
 		handleMagicLink,
-		handleGoogleLogin,
 	} = useLogin();
 
 	return (
@@ -23,7 +22,6 @@ export function AuthForm() {
 				) : (
 					<>
 						<GoogleLoginButton
-							onLogin={handleGoogleLogin}
 							isLoading={isLoading}
 						/>
 

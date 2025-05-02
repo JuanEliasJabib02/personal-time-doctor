@@ -1,4 +1,4 @@
-import {Timer } from "lucide-react";
+import { Timer } from "lucide-react";
 import { AuthForm } from "./_components/AuthForm";
 
 export default function AuthPage() {

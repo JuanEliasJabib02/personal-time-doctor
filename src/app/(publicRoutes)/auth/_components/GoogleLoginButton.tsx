@@ -1,15 +1,16 @@
 'use client';
 import { Button } from '@/lib/components/ui/button';
+import { useAuthActions } from '@convex-dev/auth/react';
 
 interface GoogleLoginButtonProps {
-	onLogin: () => Promise<any>;
 	isLoading: boolean;
 }
 
 export function GoogleLoginButton({
-	onLogin,
 	isLoading,
 }: GoogleLoginButtonProps) {
+	  const { signIn } = useAuthActions();
+
 	return (
 		<div className='space-y-4'>
 			<Button
@@ -17,7 +18,7 @@ export function GoogleLoginButton({
 				variant='outline'
 				className='w-full'
 				disabled={isLoading}
-				onClick={onLogin}
+				onClick={() => signIn('google')}
 			>
 				<GoogleIcon className='mr-2 h-4 w-4' />
 				Continue with Google
@@ -26,7 +27,6 @@ export function GoogleLoginButton({
 	);
 }
 
-// Extracted Google SVG icon as a separate component
 function GoogleIcon({ className }: { className?: string }) {
 	return (
 		<svg

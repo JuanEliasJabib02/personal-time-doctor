@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useGoogleLogin } from './useGoogleLogin';
 import { useMagicLink } from './useMagicLink';
 
 export function useLogin() {
@@ -12,9 +11,8 @@ export function useLogin() {
 		resetEmailSent,
 	} = useMagicLink();
 
-	const { isLoading: isGoogleLoading, handleGoogleLogin } = useGoogleLogin();
 
-	const isLoading = isMagicLinkLoading || isGoogleLoading;
+	const isLoading = isMagicLinkLoading
 
 	return {
 		authMethod,
@@ -23,6 +21,5 @@ export function useLogin() {
 		emailSent,
 		resetEmailSent,
 		handleMagicLink,
-		handleGoogleLogin,
 	};
 }
