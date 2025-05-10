@@ -1,9 +1,7 @@
-
-export default function DashboardPAge() {
-    return (
-			<div className='min-h-screen bg-background flex items-center justify-center'>
-
-			</div>
-		);
-  }
-  
+export default function DashboardPage() {
+  return (
+    <div className='bg-background h-full w-full'>
+      {/* Tu contenido aquí */}
+    </div>
+  );
+}

@@ -21,19 +21,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-		<html lang='en'>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<ConvexClientProvider>
-					{children}
-					<Toaster />
-				</ConvexClientProvider>
-			</body>
-		</html>
-	);
+    <html lang="en" className="h-full">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full overflow-hidden`}
+      >
+        <ConvexClientProvider>
+          {children}
+          <Toaster />
+        </ConvexClientProvider>
+      </body>
+    </html>
+  );
 }

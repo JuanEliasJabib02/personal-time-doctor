@@ -1,18 +1,16 @@
 import { Sidebar } from "@/lib/components/layout/Sidebar";
 
 export default function DashboardLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<>
-			<section className='w-full h-screen bg-blue-500 flex'>
-				<Sidebar />
-				<div className="p-8 bg-green-500 w-full">
-				{children}
-				</div>
-			</section>
-		</>
-	);
+  return (
+    <div className='flex h-screen bg-blue-500'>
+      <Sidebar />
+      <div className='flex-1 p-8 bg-green-500'>
+        {children}
+      </div>
+    </div>
+  );
 }
