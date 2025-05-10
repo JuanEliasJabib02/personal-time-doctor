@@ -9,7 +9,9 @@ export default function DashboardLayout({
 		<>
 			<section className='w-full h-screen bg-blue-500 flex'>
 				<Sidebar />
+				<div className="p-8 bg-green-500 w-full">
 				{children}
+				</div>
 			</section>
 		</>
 	);
